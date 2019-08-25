@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>tes looping</title>
+    </head>
+    <body>
+        <!-- <p id="insert"></p> -->
+        
+    </body>
+    
+       		
+		
+		<script>
+			var firsData = prompt("Please insert first data:");
+            var lastData = prompt("Please insert last data:");
+            var parsing =""
+            for (firsData; firsData <= lastData ;firsData++) {
+                if (firsData % 2 === 0 && firsData > 1) {
+                    parsing = firsData + " adalah genap";
+                    // console.log(parsing)
+                }else if (firsData % 2 === 1){
+                    parsing = firsData + " adalah ganjil";
+                    // console.log(parsing)
+                }else{
+                    parsing = "ini adalah bilangan 0"
+                }
+                // document.getElementById("insert").innerHTML = parsing;
+                document.write("<p>"+ parsing +"</p>")
+                console.log(parsing)
+            }
+            
+
+			
+		</script>
+</html>
